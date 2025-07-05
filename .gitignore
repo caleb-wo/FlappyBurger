@@ -1,3 +1,31 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*.swp # Vim swap files
+*.swo # Vim swap files
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.bak # Generic backup files
+
+# Logs and temporary files
+*.log
+*.tmp
+temp/
+
