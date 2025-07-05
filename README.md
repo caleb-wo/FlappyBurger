@@ -1,55 +1,31 @@
-VIM bindings for Godot 4
+# Overview
 
-recently improved thanks to wenqiangwang
-If you would like ctrl+F to be move-forward by page then uncomment the following line
+For this project I wanted to finally take the time to make something with Godot Game Engine. 
 
-#"Ctrl+F": 1, ## Uncomment if you want Ctrl+F for move forward by page
+I've recently been very intruiged with Godot and it's taken a lot of my free time. It's such an amazing software and it suprisingly powerful and intuitive.
 
-### Supported Mode
+This is a Flappy Bird clone called Flappy Burger. It's essentially Flappy Bird, except you're a burger with lettuce wings (courtesy of my fiancé for making us Flappy Burger!).
 
-    - Normal mode
-    - Insert mode
-    - Visual mode
-    - Visual line mode
+[Software Demo Video](http://youtube.link.goes.here)
 
-### Supported motions
+# Development Environment
 
-    h, l, j, k, +, -
-    ^, 0, $, |
-    H, L, M,
-    c-f, c-b, c-d, c-u,
-    G, gg
-    w, W, e, E, b, ge
-    %, f, F, t, T, ;
-    *, #, /, n, N
-    aw, a(, a{, a[, a", a'
-    iw, i(, i{, i[, i", i'
+As I'm comes as no suprise, this project was built with Godot game engine. 
+However, much of the assets and materials I found online for free (see Useful Websites). 
 
-### Supported operator
+In fact, before I make Flappy Burger, I did a tutorial follow through, which is where all of those other random assets come from.
 
-    c, C,
-    d, D, x, X,
-    y, Y,
-    u, U, ~
+The programming language used here is GDScript. Godot's own scripting language.
+It's very powerful and is deeply integrated with Godot's Engine. It's similar to Python and offers static and loose typing (but of course we're doing static =D). 
 
-### Supported actions
+# Useful Websites
 
-    p,
-    u, c-r,
-    c-o, c-i,
-    za, zM, zR,
-    q, @, .,
-    >, <
-    m, '
+* [Godot Docs](https://docs.godotengine.org/en/stable/); Godot's documentation was crucial for me in learning how it works and getting a grasp on the node and scene system.
+* [Brackeys](https://www.youtube.com/@Brackeys) and his [2D game tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) were SO helpful. I watched it all the way through and regularly went back to it. (also where I got assets to practice with.)
 
-### Override Default Godot Shortcuts with `godot-vim`'s ones
+* [Coding With Russ](https://www.youtube.com/@CodingWithRuss) was also great and I went along with his [Flappy Bird](https://www.youtube.com/watch?v=9f9t9eiCDAA&pp=ygURZmxhcHB5IGJpcmQgZ29kb3Q%3D) Godot demo. He's also responsible for the backgound, pipes, and other Flappy Bird assets.
 
-Note that all non-ascii character mappings that are already mapped in the default Godot editor have to be unmapped from the Editor settings (Editor >> Editor Settings >> Shorcuts) before being usable with `godot-vim`.
+# Future Work
 
-This currently goes for:
-
-- `Ctrl+R`
-- `Ctrl+U`
-- `Ctrl+D`
-
-See the full list of non-ascii shortucts that may already be mapped by Godot and thus wouldn't work in `godot-vim` before releasing them in Godot settings: https://github.com/joshnajera/godot-vim/blob/main/addons/godot-vim/godot-vim.gd#L135
+* Add music and sound effects
+* Have my fiancé make some background and pipe art.
