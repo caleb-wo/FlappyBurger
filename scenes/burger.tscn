@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://bx45iyjrci2g3"]
+
+[ext_resource type="Script" uid="uid://cv02swh3oqmtp" path="res://burger.gd" id="1_4q7kc"]
+[ext_resource type="Texture2D" uid="uid://cmubi4h5j4c6l" path="res://assets/sprites/burger/Flappyburger1.png" id="2_btekn"]
+[ext_resource type="Texture2D" uid="uid://cbgystwiyr3jd" path="res://assets/sprites/burger/Flappyburger2.png" id="3_kk3p5"]
+[ext_resource type="Texture2D" uid="uid://ck284vcmkoksm" path="res://assets/sprites/burger/Flappyburger3.png" id="4_83oce"]
+[ext_resource type="Texture2D" uid="uid://ccj4n0cd5l5du" path="res://assets/sprites/burger/Flappyburger4.png" id="5_kiav6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kiav6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_btekn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kk3p5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_83oce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_kiav6")
+}],
+"loop": true,
+"name": &"flying",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4y78e"]
+radius = 17.0
+height = 38.0
+
+[node name="Burger" type="CharacterBody2D"]
+z_index = 1
+script = ExtResource("1_4q7kc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 0)
+sprite_frames = SubResource("SpriteFrames_kiav6")
+animation = &"flying"
+frame_progress = 0.0498122
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7, -2)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_4y78e")
