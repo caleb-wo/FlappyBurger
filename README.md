@@ -6,14 +6,14 @@ I've recently been very intruiged with Godot and it's taken a lot of my free tim
 
 This is a Flappy Bird clone called Flappy Burger. It's essentially Flappy Bird, except you're a burger with lettuce wings (courtesy of my fiancé for making us Flappy Burger!).
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/5bmLloJMWpY)
 
 # Development Environment
 
-As I'm comes as no suprise, this project was built with Godot game engine. 
+As I'm sure comes as no suprise, this project was built with Godot game engine. 
 However, much of the assets and materials I found online for free (see Useful Websites). 
 
-In fact, before I make Flappy Burger, I did a tutorial follow through, which is where all of those other random assets come from.
+In fact, before I made Flappy Burger, I did a tutorial follow through, which is where all of those other random assets come from.
 
 The programming language used here is GDScript. Godot's own scripting language.
 It's very powerful and is deeply integrated with Godot's Engine. It's similar to Python and offers static and loose typing (but of course we're doing static =D). 

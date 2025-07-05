@@ -38,7 +38,7 @@ script = ExtResource("1_4q7kc")
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_kiav6")
 animation = &"flying"
-frame_progress = 0.0498122
+frame_progress = 0.113527
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(7, -2)
